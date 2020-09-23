@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.demo.entity;
 
 
 import java.io.Serializable;
@@ -19,7 +19,9 @@ import lombok.ToString;
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
 public class Patient implements Serializable {
 	
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	@Id 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nom; 
 	private Date datedenaissance;
